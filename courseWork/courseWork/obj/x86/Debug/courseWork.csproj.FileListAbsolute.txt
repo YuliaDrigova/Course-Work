@@ -1,0 +1,9 @@
+C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\obj\x86\Debug\courseWork.Form1.resources
+C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\obj\x86\Debug\courseWork.Properties.Resources.resources
+C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\obj\x86\Debug\courseWork.csproj.GenerateResource.Cache
+C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\bin\Debug\courseWork.exe
+C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\bin\Debug\courseWork.pdb
+C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\obj\x86\Debug\courseWork.exe
+C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\obj\x86\Debug\courseWork.pdb
+C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\obj\x86\Debug\courseWork.csprojResolveAssemblyReference.cache
+C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\obj\x86\Debug\courseWork.Form2.resources

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Film xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Film>
+    <Title>The Cure</Title>
+    <Company>Lionsgate Entertainment Corporation</Company>
+    <Year>1995</Year>
+    <Genre>drama</Genre>
+    <Duration>97</Duration>
+    <Format>.avi</Format>
+    <Quality>480</Quality>
+    <Director>Piter Horton</Director>
+  </Film>
+  <Film>
+    <Title>Back to the future</Title>
+    <Company>Warner Bros.</Company>
+    <Year>1985</Year>
+    <Genre>fantasy</Genre>
+    <Duration>116</Duration>
+    <Format>.mp4</Format>
+    <Quality>720 HD</Quality>
+    <Director>Robert Zemecis</Director>
+  </Film>
+  <Film>
+    <Title>Monstr</Title>
+    <Company>Golden Harvest</Company>
+    <Year>1994</Year>
+    <Genre>comedy</Genre>
+    <Duration>133</Duration>
+    <Format>.wma</Format>
+    <Quality>360</Quality>
+    <Director>Roberto Beninni</Director>
+  </Film>
+  <Film>
+    <Title>One day</Title>
+    <Company>Miramax Films</Company>
+    <Year>2011</Year>
+    <Genre>melodrama</Genre>
+    <Duration>86</Duration>
+    <Format>.mov</Format>
+    <Quality>480</Quality>
+    <Director>Pol Wesley</Director>
+  </Film>
+</Film>
