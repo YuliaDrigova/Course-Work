@@ -5,6 +5,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
+using System.Drawing;
 
 namespace courseWork
 {
@@ -14,13 +15,14 @@ namespace courseWork
 
         public List<Film> searched = new List<Film>();
 
-        public void Addition (string Title, string Company, string Year, string Genre, string Duration, string Format, string Quality, string Director)
+        public void Addition (string Title, string Company, string Year, string Genre, string Duration, string Format, string Quality, string Director, string Picture_Type, Image Poster)
         {
-            Movies.Add(new Film(Title, Company, Year, Genre, Duration, Format, Quality, Director));
+            Movies.Add(new Film(Title, Company, Year, Genre, Duration, Format, Quality, Director, Picture_Type, Poster));
         }
 
         public void Search(string text)
         {
+            searched.Clear();
             foreach (Film item in Movies)
             {
                 if ((item.ToString()).Contains(text))
@@ -28,9 +30,9 @@ namespace courseWork
                     searched.Add(item);
                 }
             }
-
+            
         }
-        //public void Search()
+
 
         public void Sort(int i)
         {
@@ -69,7 +71,21 @@ namespace courseWork
                 XmlSerializer deserializer = new XmlSerializer(typeof(List<Film>), new XmlRootAttribute("Film"));
                 Movies = (List<Film>)deserializer.Deserialize(reader);
             }
+            foreach (Film f in Movies)
+            {
+                try 
+                {
+                    if (f.Picture_Type != null)
+                    {
+                        Image a = new Bitmap(Environment.CurrentDirectory + "\\Image" + "\\" + f.Title + f.Picture_Type);
+                        f.Poster = a;
+                    }
+                }
+                catch { }
+            }
         }
+
+
     }
 }
 

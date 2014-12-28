@@ -46,6 +46,11 @@
             this.bn_Add = new System.Windows.Forms.Button();
             this.bn_save = new System.Windows.Forms.Button();
             this.cb_Genre = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pb_Poster = new System.Windows.Forms.PictureBox();
+            this.bn_Browse = new System.Windows.Forms.Button();
+            this.openFile = new System.Windows.Forms.OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Poster)).BeginInit();
             this.SuspendLayout();
             // 
             // tb_Name
@@ -290,12 +295,47 @@
             this.cb_Genre.TabIndex = 25;
             this.cb_Genre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cb_KeyPress);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(422, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 26);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Poster";
+            // 
+            // pb_Poster
+            // 
+            this.pb_Poster.Location = new System.Drawing.Point(408, 48);
+            this.pb_Poster.Name = "pb_Poster";
+            this.pb_Poster.Size = new System.Drawing.Size(100, 125);
+            this.pb_Poster.TabIndex = 27;
+            this.pb_Poster.TabStop = false;
+            // 
+            // bn_Browse
+            // 
+            this.bn_Browse.Location = new System.Drawing.Point(433, 193);
+            this.bn_Browse.Name = "bn_Browse";
+            this.bn_Browse.Size = new System.Drawing.Size(75, 23);
+            this.bn_Browse.TabIndex = 28;
+            this.bn_Browse.Text = "Browse";
+            this.bn_Browse.UseVisualStyleBackColor = true;
+            this.bn_Browse.Click += new System.EventHandler(this.bn_Browse_Click);
+            // 
+            // openFile
+            // 
+            this.openFile.FileName = "openFile";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
             this.ClientSize = new System.Drawing.Size(536, 342);
+            this.Controls.Add(this.bn_Browse);
+            this.Controls.Add(this.pb_Poster);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.cb_Genre);
             this.Controls.Add(this.bn_save);
             this.Controls.Add(this.bn_Add);
@@ -316,6 +356,7 @@
             this.Controls.Add(this.tb_Name);
             this.Name = "Form2";
             this.Text = "New movie";
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Poster)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -341,5 +382,9 @@
         public System.Windows.Forms.Button bn_Add;
         public System.Windows.Forms.Button bn_save;
         public System.Windows.Forms.ComboBox cb_Genre;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button bn_Browse;
+        private System.Windows.Forms.OpenFileDialog openFile;
+        public System.Windows.Forms.PictureBox pb_Poster;
     }
 }

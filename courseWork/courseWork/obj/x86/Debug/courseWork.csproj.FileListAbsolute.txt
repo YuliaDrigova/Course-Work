@@ -7,3 +7,21 @@ C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\
 C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\obj\x86\Debug\courseWork.pdb
 C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\obj\x86\Debug\courseWork.csprojResolveAssemblyReference.cache
 C:\Users\Лулка\Documents\Visual Studio 2010\Projects\courseWork\courseWork\obj\x86\Debug\courseWork.Form2.resources
+D:\Github\courseWork\courseWork\obj\x86\Debug\courseWork.exe
+D:\Github\courseWork\courseWork\obj\x86\Debug\courseWork.pdb
+D:\Github\courseWork\courseWork\bin\Debug\courseWork.exe
+D:\Github\courseWork\courseWork\bin\Debug\courseWork.pdb
+D:\Github\courseWork\courseWork\obj\x86\Debug\courseWork.csprojResolveAssemblyReference.cache
+D:\Github\courseWork\courseWork\obj\x86\Debug\courseWork.Form1.resources
+D:\Github\courseWork\courseWork\obj\x86\Debug\courseWork.Form2.resources
+D:\Github\courseWork\courseWork\obj\x86\Debug\courseWork.Properties.Resources.resources
+D:\Github\courseWork\courseWork\obj\x86\Debug\courseWork.csproj.GenerateResource.Cache
+D:\screens\courseWork\courseWork\obj\x86\Debug\courseWork.exe
+D:\screens\courseWork\courseWork\obj\x86\Debug\courseWork.csprojResolveAssemblyReference.cache
+D:\screens\courseWork\courseWork\obj\x86\Debug\courseWork.Form1.resources
+D:\screens\courseWork\courseWork\obj\x86\Debug\courseWork.Form2.resources
+D:\screens\courseWork\courseWork\obj\x86\Debug\courseWork.Properties.Resources.resources
+D:\screens\courseWork\courseWork\obj\x86\Debug\courseWork.csproj.GenerateResource.Cache
+D:\screens\courseWork\courseWork\bin\Debug\courseWork.exe
+D:\screens\courseWork\courseWork\bin\Debug\courseWork.pdb
+D:\screens\courseWork\courseWork\obj\x86\Debug\courseWork.pdb

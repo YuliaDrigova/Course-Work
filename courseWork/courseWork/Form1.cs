@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 
 namespace courseWork
@@ -19,6 +20,8 @@ namespace courseWork
             InitializeComponent();
             Collection.Read_from_XML();
             dgv_films.DataSource = Collection.Movies;
+            dgv_films.Columns[8].Visible = false;
+            dgv_films.Columns[9].Visible = false;
         }
 
 
@@ -45,6 +48,8 @@ namespace courseWork
             f.cb_Format.Text = dgv_films[5, indexRow].Value.ToString();
             f.cb_Quality.Text = dgv_films[6, indexRow].Value.ToString();
             f.tb_Director.Text = dgv_films[7, indexRow].Value.ToString();
+            dgv_films.Columns[8].Visible = false;
+            dgv_films.Columns[9].Visible = false;
 
             f.ShowDialog();
         }
@@ -52,8 +57,11 @@ namespace courseWork
         private void bn_Search_Click(object sender, EventArgs e)
         {
             Collection.Search(tb_search.Text);
+            
             dgv_films.DataSource = null;
             dgv_films.DataSource = Collection.searched;
+            dgv_films.Columns[8].Visible = false;
+            dgv_films.Columns[9].Visible = false;
 
         }
 
@@ -75,12 +83,18 @@ namespace courseWork
             Collection.Movies.RemoveAt(dgv_films.CurrentRow.Index);
             dgv_films.DataSource = null;
             dgv_films.DataSource = Collection.Movies;
+            pb_POSTER.Image = null;
+            dgv_films.Columns[8].Visible = false;
+            dgv_films.Columns[9].Visible = false;
+            
         }
 
         private void bn_Show_Click(object sender, EventArgs e)
         {
             dgv_films.DataSource = null;
             dgv_films.DataSource = Collection.Movies;
+            dgv_films.Columns[8].Visible = false;
+            dgv_films.Columns[9].Visible = false;
         }
 
 
@@ -105,7 +119,18 @@ namespace courseWork
             }
             dgv_films.DataSource = null;
             dgv_films.DataSource = Collection.Movies;
+            dgv_films.Columns[8].Visible = false;
+            dgv_films.Columns[9].Visible = false;
         }
+
+        private void dgv_films_MouseClick(object sender, MouseEventArgs e)
+        {
+            int indexRow = dgv_films.CurrentRow.Index;
+            pb_POSTER.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_POSTER.Image = Collection.Movies[indexRow].Poster;
+            
+        }
+
 
     }
 }
